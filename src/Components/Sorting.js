@@ -4,11 +4,11 @@ import './sorting.css';
 
 
 
-const ANIMATION_SPEED = 1
+const ANIMATION_SPEED = 3
 
 const NUM_OF_BARS_IN_ARRAY = 310
 
-const PRIMARY_COLOR = "blue"
+const PRIMARY_COLOR = "lightblue"
 
 const SECONDARY_COLOR = "red"
 
@@ -34,6 +34,11 @@ class Sorting extends React.Component {
             array.push(randomBarArrayGenerator(5, 730))
         }
         this.setState({array})
+    }
+
+    bubbleSort() {
+      const animations = SortingAlgo(this.state.array)
+
     }
 
    
